@@ -37,11 +37,21 @@ module.
 
 ## One-time build and installation
 
-Run on the Bazzite machine:
+Clone this repository and run the build on the Bazzite machine:
 
 ```bash
-cd /home/felipe/Projects/felipecwb/rpm-aic8800d80
-chmod +x build.sh install.sh
+git clone https://github.com/felipecwb/rpm-aic8800d80.git
+cd rpm-aic8800d80
+./build.sh
+./install.sh
+sudo systemctl reboot
+```
+
+To update this packaging later, pull the latest changes and rebuild:
+
+```bash
+cd rpm-aic8800d80
+git pull --ff-only
 ./build.sh
 ./install.sh
 sudo systemctl reboot
