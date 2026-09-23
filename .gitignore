@@ -1,0 +1,4 @@
+rpmbuild/
+results/
+mock/
+*.src.rpm
