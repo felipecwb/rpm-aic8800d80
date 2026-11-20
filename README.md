@@ -26,8 +26,9 @@ module.
 ## Important prerequisites
 
 - The specs currently use upstream's `main` branch commit
-  `27af5add83088af64b013ec99db1ddf824112e6e`. Devices reporting
-  `chip_mcu_id=1` require upstream's `legacy-mcu1` branch instead.
+  `1a2ce4e38e678a0c0d7f6071be415ab74f488240`. This includes upstream's
+  Linux 7.3 firmware-open fallback fix. Devices reporting `chip_mcu_id=1`
+  require upstream's `legacy-mcu1` branch instead.
 - **Secure Boot must currently be disabled.** Universal Blue does not publish
   the private key used to sign its official kernel modules, so a local akmod
   cannot sign with that key. `install.sh` refuses installation when Secure Boot

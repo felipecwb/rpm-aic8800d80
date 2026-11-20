@@ -1,5 +1,5 @@
-%global commit 27af5add83088af64b013ec99db1ddf824112e6e
-%global commitdate 20260917
+%global commit 1a2ce4e38e678a0c0d7f6071be415ab74f488240
+%global commitdate 20261120
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global modname aic8800d80
 
@@ -51,5 +51,5 @@ cp -a fw/aic8800* %{buildroot}/usr/lib/firmware/
 /usr/lib/firmware/aic8800*
 
 %changelog
-* Thu Sep 17 2026 Felipe CWB - 1.0.0.git20260917.27af5ad-1
-- Initial firmware and configuration package for Bazzite.
+* Fri Nov 20 2026 Felipe CWB - 1.0.0.git20261120.1a2ce4e-1
+- Update firmware and configuration source to upstream main.
